@@ -1,0 +1,165 @@
+:root {
+  --englishGreen: darkslategrey;
+  --softText: whitesmoke;
+}
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+header { 
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+  background-color: darkslategrey;
+  display:inline-block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  flex-direction: column;
+  display: flex;
+  background-color: var(--englishGreen);
+}
+
+
+h1 {
+  text-align: center;
+  display: inline-block;
+  border: 2px solid whitesmoke; /* Add a 2px solid black border around the <h1> */
+   padding: 10px; /* Add padding for spacing between text and border */
+}
+ header h1{
+  display: inline;
+  color: var(--softText);
+  border: 15px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+ }
+
+h2{
+  display: inline;
+
+
+}
+h3,
+h4,
+h5,
+h6 {
+
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+section {
+  background-color: var(--englishGreen);
+}
+img {
+  border: 15px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+footer {
+
+display: block;
+text-align: center;
+width: 100%;
+background-color: darkslategrey;
+padding: 20px 0;
+
+}
+footer h2 { 
+text-align: left;
+left: 0%;
+float: left;
+
+}
+#navBar {
+  position: fixed; /* Position the nav bar */
+  top: 0; /* Stick it to the top */
+  right: 0; /* Push it to the right */
+  background-color: darkslategrey;
+  color: whitesmoke;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+#navBar h1 {
+  margin: 0; 
+  font-size: 24px; 
+  display: block;
+}
+
+#navigation p {
+  display: inline-flex ; /* Make the navigation links display horizontally */
+  margin-right: 20px; /* Adjust spacing between links as needed */
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+#navigation p a {
+  text-decoration: none; /* Remove underline from links */
+  color: whitesmoke;
+}
+
+#navigation p a:hover {
+  text-decoration: underline;
+}
+
+.hero-banner{
+  display: flex;
+  align-items: center; /* Center items vertically within the hero-banner */
+  background-color: darkslategrey; /* Add darkslategrey background */
+  color: whitesmoke;
+  padding: 20px; /* Adjust padding as needed */
+  height:400px;
+}
+
+.profile-image {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 35px; /* Add margin to separate the image from text */
+  margin-top: 20px;
+  object-fit: cover;
+
+}
+
+/* Information about yourself styles */
+.profile-info {
+  flex-grow: 1; /* Allow this div to grow and fill the available space */
+  display: center;
+}
+
+.AboutContainer {
+  background-color: var(--englishGreen);
+border: 15px var(--softText);
+margin-left: 15%;
+display: flex;
+flex-direction: column;
+}
+
+.box {
+  left:0px;
+  background-color: var(--englishGreen);
+color: whitesmoke;
+font-size: 20px;
+text-align: left;
+flex-grow: 1;
+margin: 10px;
+}
+
+footer ol {
+  left: 0%;
+}
