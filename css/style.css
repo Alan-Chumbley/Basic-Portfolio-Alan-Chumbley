@@ -7,52 +7,51 @@
   margin: 0%;
   padding: 0%;
 }
-header { 
+header {
   position: fixed;
   top: 0;
   z-index: 2;
   width: 100%;
   height: 100px;
   background-color: darkslategrey;
-  display:inline-block;
+  display: inline-block;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
   flex-direction: column;
   display: flex;
   background-color: var(--englishGreen);
 }
 
-
 h1 {
   text-align: center;
   display: inline-block;
   border: 2px solid whitesmoke; /* Add a 2px solid black border around the <h1> */
-   padding: 10px; /* Add padding for spacing between text and border */
+  padding: 10px; /* Add padding for spacing between text and border */
 }
- header h1{
+header h1 {
   display: inline;
   color: var(--softText);
   border: 15px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
- }
+}
 
-h2{
+h2 {
   display: inline;
-
-
+  color: var(--softText);
+  size: 24px;
 }
 h3,
 h4,
 h5,
 h6 {
-
   margin: 0;
 }
 
@@ -62,28 +61,36 @@ p {
 section {
   background-color: var(--englishGreen);
 }
-img {
-  border: 15px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+ /*img {
+ 
+  
+}
+*/
+
+.AboutContainer {
+  display: flex;
+  align-content: space-around;
+  flex-grow: inherit;
+  width: 75%;
 }
 
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 footer {
-
-display: block;
-text-align: center;
-width: 100%;
-background-color: darkslategrey;
-padding: 20px 0;
-
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: darkslategrey;
+  padding: 20px 0;
 }
-footer h2 { 
-text-align: left;
-left: 0%;
-float: left;
-
+footer h2 {
+  text-align: left;
+  left: 0%;
+  float: left;
 }
+
 #navBar {
   position: fixed; /* Position the nav bar */
   top: 0; /* Stick it to the top */
@@ -96,15 +103,14 @@ float: left;
   justify-content: space-between;
 }
 
-
 #navBar h1 {
-  margin: 0; 
-  font-size: 24px; 
+  margin: 0;
+  font-size: 24px;
   display: block;
 }
 
 #navigation p {
-  display: inline-flex ; /* Make the navigation links display horizontally */
+  display: inline-flex; /* Make the navigation links display horizontally */
   margin-right: 20px; /* Adjust spacing between links as needed */
   font-size: 18px; /* Adjust font size as needed */
 }
@@ -118,13 +124,13 @@ float: left;
   text-decoration: underline;
 }
 
-.hero-banner{
+.hero-banner {
   display: flex;
   align-items: center; /* Center items vertically within the hero-banner */
   background-color: darkslategrey; /* Add darkslategrey background */
   color: whitesmoke;
   padding: 20px; /* Adjust padding as needed */
-  height:400px;
+  height: 400px;
 }
 
 .profile-image {
@@ -133,7 +139,6 @@ float: left;
   margin-right: 35px; /* Add margin to separate the image from text */
   margin-top: 20px;
   object-fit: cover;
-
 }
 
 /* Information about yourself styles */
@@ -144,13 +149,14 @@ float: left;
 
 .AboutContainer {
   background-color: var(--englishGreen);
-border: 15px var(--softText);
-margin-left: 15%;
-display: flex;
-flex-direction: column;
+  border: 15px var(--softText);
+  margin-left: 15%;
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
 }
 
-.box {
+/*box {
   left:0px;
   background-color: var(--englishGreen);
 color: whitesmoke;
@@ -159,7 +165,68 @@ text-align: left;
 flex-grow: 1;
 margin: 10px;
 }
+*/
 
 footer ol {
   left: 0%;
+}
+
+.center {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "About-me Stuff-about-ME"
+    "Work Projects"
+    "Contact-Me Details";
+}
+
+.About-me {
+  grid-area: About-me;
+}
+
+.Work {
+  grid-area: Work;
+}
+
+.Contact-Me {
+  grid-area: Contact-Me;
+}
+
+.Stuff-about-ME {
+  grid-area: Stuff-about-ME;
+}
+
+.Projects {
+  grid-area: Projects;
+}
+
+.Details {
+  grid-area: Details;
+}
+
+#TargetImage {
+height: 250px;
+  padding-right: 10px;
+}
+
+#ProfileTopLeft{
+
+
+border: 15px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+width: 150px;
+margin-right: 20px;
+}
+.projectPhotos {
+
+  height: 250px;
 }
